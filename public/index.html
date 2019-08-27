@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Auth Test</title>
+    </head>
+    <body>
+        <main>
+
+            <div id="oauth"></div>
+
+        </main>
+
+        <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+        <script>
+
+          let googleURL = "https://github.com/login/oauth/authorize";
+
+          let options = {
+            client_id:'25874d1e3ffbfe6d4bc8',
+            redirect_uri: 'http://localhost:3000/oauth',
+            scope: '',
+            prompt: 'consent',
+            response_type: 'code'
+          };
+
+          let QueryString = Object.keys(options).map( (key,i) => {
+            return `${key}=` + encodeURIComponent(options[key]);
+          }).join("&");
+
+          let authURL = `${googleURL}?${QueryString}`;
+
+          $('#oauth').append(`<a href="${authURL}">Login With Github</a>`);
+
+        </script>
+
+
+    </body>
+</html>

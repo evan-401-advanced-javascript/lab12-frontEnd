@@ -1,0 +1,23 @@
+{
+  "name": "web-server",
+  "version": "1.0.0",
+  "description": "Evan here",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evan-401-advanced-javascript/lab12-frontEnd.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/evan-401-advanced-javascript/lab12-frontEnd/issues"
+  },
+  "homepage": "https://github.com/evan-401-advanced-javascript/lab12-frontEnd#readme"
+}
